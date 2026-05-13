@@ -27,11 +27,18 @@ const Hero = () => {
       ref={heroRef}
       className="relative h-screen w-full overflow-hidden"
     >
-      {/* Parallax Background */}
+      {/* Mobile Background */}
       <div
-        className="absolute inset-0 parallax-bg"
+        className="absolute inset-0 parallax-bg block lg:hidden"
         style={{
-          backgroundImage: `url(${heroConfig.backgroundImage})`,
+          backgroundImage: `url(/images/hero.png)`,
+        }}
+      />
+      {/* Desktop Background */}
+      <div
+        className="absolute inset-0 parallax-bg hidden lg:block"
+        style={{
+          backgroundImage: `url(/images/desktopversionhero.png)`,
         }}
       />
 
