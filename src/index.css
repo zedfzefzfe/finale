@@ -201,6 +201,66 @@
       background-repeat: no-repeat;
     }
   }
+
+  @media (max-width: 768px) {
+    /* Airy thin sans — feels editorial, not corporate */
+    #hero .hero-tagline {
+      font-family: 'Jost', sans-serif;
+      font-weight: 200;
+      font-size: 9px;
+      letter-spacing: 0.65em;
+      color: #c9a227;
+    }
+
+    /* Oversized italic gold — the dramatic accent line */
+    #hero .hero-title-line1 {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 4.4rem;
+      line-height: 0.95;
+      letter-spacing: -0.01em;
+      color: #c9a227;
+      background: none;
+      -webkit-background-clip: unset;
+      -webkit-text-fill-color: #c9a227;
+      background-clip: unset;
+    }
+
+    /* Roman weight contrast — deliberately smaller creates tension */
+    #hero .hero-title-line2 {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2.5rem;
+      line-height: 1.15;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      text-shadow: 0 2px 24px rgba(0, 0, 0, 0.9);
+    }
+
+    /* Thin geometric sans — clean, not overdesigned */
+    #hero .hero-btn-primary {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 0.45em;
+      background: #c9a227;
+      color: #000;
+    }
+
+    #hero .hero-btn-secondary {
+      font-family: 'Jost', sans-serif;
+      font-weight: 200;
+      font-size: 10px;
+      letter-spacing: 0.45em;
+      border: 1px solid rgba(201, 162, 39, 0.65);
+      color: #c9a227;
+      background: transparent;
+    }
+  }
   
   .animate-fade-up {
     animation: fadeUp 0.8s ease forwards;
