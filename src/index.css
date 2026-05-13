@@ -189,9 +189,10 @@
   }
   
   .parallax-bg {
-    background-attachment: fixed;
-    background-size: contain;
+    background-attachment: scroll;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
   }
   
   @media (max-width: 768px) {
@@ -202,25 +203,25 @@
     }
   }
 
-  @media (max-width: 768px) {
-    /* Airy thin sans — feels editorial, not corporate */
+  @media (min-width: 1024px) {
+    /* Ultra-thin spaced eyebrow — editorial, not corporate */
     #hero .hero-tagline {
       font-family: 'Jost', sans-serif;
       font-weight: 200;
-      font-size: 9px;
-      letter-spacing: 0.65em;
+      font-size: 11px;
+      letter-spacing: 0.7em;
       color: #c9a227;
     }
 
-    /* Oversized italic gold — the dramatic accent line */
+    /* Oversized italic — the expressive accent line */
     #hero .hero-title-line1 {
       display: block;
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
       font-weight: 300;
-      font-size: 4.4rem;
-      line-height: 0.95;
-      letter-spacing: -0.01em;
+      font-size: 7rem;
+      line-height: 0.88;
+      letter-spacing: -0.02em;
       color: #c9a227;
       background: none;
       -webkit-background-clip: unset;
@@ -228,40 +229,31 @@
       background-clip: unset;
     }
 
-    /* Roman weight contrast — deliberately smaller creates tension */
+    /* Roman, tracked out — weight contrast with line above */
     #hero .hero-title-line2 {
       display: block;
       font-family: 'Cormorant Garamond', serif;
       font-style: normal;
-      font-weight: 500;
-      font-size: 2.5rem;
+      font-weight: 400;
+      font-size: 3.8rem;
       line-height: 1.15;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.12em;
       color: #ffffff;
-      text-shadow: 0 2px 24px rgba(0, 0, 0, 0.9);
+      text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
     }
 
-    /* Thin geometric sans — clean, not overdesigned */
+    /* Refined primary — clean geometric sans */
     #hero .hero-btn-primary {
       font-family: 'Jost', sans-serif;
       font-weight: 300;
-      font-size: 10px;
+      font-size: 11px;
       letter-spacing: 0.45em;
       background: #c9a227;
       color: #000;
-    }
-
-    #hero .hero-btn-secondary {
-      font-family: 'Jost', sans-serif;
-      font-weight: 200;
-      font-size: 10px;
-      letter-spacing: 0.45em;
-      border: 1px solid rgba(201, 162, 39, 0.65);
-      color: #c9a227;
-      background: transparent;
+      border: none;
     }
   }
-  
+
   .animate-fade-up {
     animation: fadeUp 0.8s ease forwards;
   }

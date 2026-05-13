@@ -43,7 +43,7 @@ const Hero = () => {
       />
 
       {/* Dark Overlay with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70 lg:from-black/25 lg:via-black/10 lg:to-black/40" />
 
       {/* Gold accent line at top */}
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C9A84C]/50 to-transparent" />
@@ -119,7 +119,7 @@ const Hero = () => {
                     e.preventDefault();
                     document.querySelector(heroConfig.ctaSecondaryTarget)?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="hero-btn-secondary group w-full lg:w-auto px-5 md:px-12 py-4 md:py-5 border-2 border-[#C9A84C] text-[#C9A84C] font-light tracking-wider text-xs md:text-sm uppercase relative overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-[#C9A84C]/30 hover:-translate-y-1"
+                  className="group w-full lg:w-auto px-5 md:px-12 py-4 md:py-5 border-2 border-[#C9A84C] text-[#C9A84C] font-light tracking-wider text-xs md:text-sm uppercase relative overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-[#C9A84C]/30 hover:-translate-y-1"
                 >
                   <span className="relative z-10 group-hover:text-black transition-colors duration-300">{heroConfig.ctaSecondaryText}</span>
                   <div className="absolute inset-0 bg-[#C9A84C] -translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-0" />
